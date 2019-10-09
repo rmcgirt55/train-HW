@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>kings crossing</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+<link rel="stylesheet" href="Assets/style.css">
+        
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1><strong>Kings Crossing</strong></h1>
+            
+
+        </div>
+  <hr>
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="panel panel-defult">
+            <div class="panel-heading">
+                <h3><strong>Train schedule</strong> </h3>
+                
+            </div>
+            <table class="table table-dark" id="train-table">
+                <thread>
+                    <tr>
+                        <th>Train Name</th>
+                        <th>Destination</th>
+                        <th class="text-center">Frequency</th>
+                        <th class="text-center">Next Arrival</th>
+                        <th class="text-center">Minutes Away</th>
+                        <th class="text-center">Erase</th>
+                    </tr>
+                </thread>
+                <tbody id="TableRows">
+                    </tbody> 
+            </table>    
+            </div>
+        </div>
+</div>
+<hr>
+    
+    <div class="col-sm-12">
+            <div class="table table-dark">
+              <div class="panel-heading">
+                <h2 class="panel-title">Add a Train</h2>
+                <div>
+                  <div class="panel-body">
+                    <form>
+                            <div class="form-group">
+                                    <label>Train Name</label>
+                                    <input type="text" class="form-control form-field" id="train-name">
+                                  </div>
+                        <div class="form-group">
+                            <label>Destination</label>
+                            <input type="text" class="form-control form-field" id="destination">
+                        </div>
+                        <div class="form-group">
+                                <label>First Train Time: HH:mm:ss
+
+                                </label>
+                                <input type="text" class="form-control form-field" id="first-train">
+                              </div>
+                              <div class="form-group">
+                                <label>Frequency</label>
+                                <input type="text" class="form-control form-field" id="frequency">
+                              </div>
+                            </div>
+            
+                            <button type="submit" class="btn btn-default" id="submit">Add Train</button>
+
+
+                            
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+  
+   <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
+              
+              <script type="text/javascript" src="Assets/javascript/app.js"></script>
+    
+</body>
+</html>
